@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-
+localStorage.setItem('hasVisitedLoading', 'false')
 const router = useRouter()
 
 const formData = ref({ username: 'admin', password: '123456' })

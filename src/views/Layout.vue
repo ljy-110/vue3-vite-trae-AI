@@ -39,6 +39,7 @@ const handleProfile = () => {
 }
 
 const handleLogout = () => {
+  localStorage.setItem('hasVisitedLoading', 'false')
   router.push('/login')
 }
 </script>
